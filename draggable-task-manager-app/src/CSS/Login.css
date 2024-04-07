@@ -1,0 +1,195 @@
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  width: 340px;
+  /* height: 400px; */
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 47px;
+  padding-bottom: 57px;
+  color: #fff;
+  border-radius: 17px;
+  padding-bottom: 50px;
+  font-size: 1.3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="email"],
+textarea,
+select {
+  opacity: 1;
+  display: block;
+  border: 2px solid #206bc4;
+  outline: none;
+  width: 90%;
+  padding: 13px 18px;
+  margin: 20px 0 0 0;
+  font-size: 0.8em;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.login input:focus {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.login input[type="submit"],
+.login input[type="button"],
+.h1 {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 13px;
+  margin: 40px 0 0 0;
+  border-radius: 500px;
+  font-weight: 600;
+  -webkit-animation: bounce2 1.6s;
+  animation: bounce2 1.6s;
+}
+
+.h1 {
+  padding: 0;
+  position: relative;
+  top: -35px;
+  display: block;
+  margin-bottom: -0px;
+  font-size: 1.3em;
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  /* background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb); */
+  background-color: #206bc4;
+  color: black;
+  padding: 16px !important;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  /* background: linear-gradient(144deg, #1e1e1e, 20%, #1e1e1e 50%, #1e1e1e); */
+  background-color: #4d9dff;
+  color: rgb(255, 255, 255);
+  padding: 16px !important;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"],
+textarea,
+.priority,
+select {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.login input[type="password"] {
+  -webkit-animation: bounce1 1.3s;
+  animation: bounce1 1.3s;
+}
+
+.ui {
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#b563ff, #535efc, #0ec8ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 4px solid transparent;
+  -o-border-image: linear-gradient(0.25turn, #535efc, #0ec8ee, #0ec8ee);
+  border-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#535efc),
+    color-stop(#0ec8ee),
+    to(#0ec8ee)
+  );
+  border-image: linear-gradient(0.25turn, #535efc, #0ec8ee, #0ec8ee);
+  border-image-slice: 1;
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 70%;
+    padding: 3em;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-250px);
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-250px);
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce1 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce2 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
