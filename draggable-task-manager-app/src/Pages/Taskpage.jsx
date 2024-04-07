@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 export const Taskpage = () => {
   const dispatch = useDispatch();
   const token = useSelector((store) => store.auth.token);
+  const loading = useSelector((store) => store.data.isLoading);
   const data = useSelector((store) => store.data.tasks);
   // console.log(data);
   let status = ["Task", "InProgress", "Done", "Rework"];
@@ -24,6 +25,7 @@ export const Taskpage = () => {
           <Statusbox key={i} status={item} data={data} />
         ))}
       </div>
+      {loading && <h1 id="loading">Loading...</h1>}
     </>
   );
 };

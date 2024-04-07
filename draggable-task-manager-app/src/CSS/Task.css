@@ -1,3 +1,22 @@
 .task {
   border: 1px solid #206bc4;
+  background-color: #151f2b;
+  color: white;
+  padding: 16px !important;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.task:hover {
+  cursor: grab;
+}
+
+.title {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.description {
+  font-weight: 400;
+  font-size: large;
 }

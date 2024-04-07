@@ -4,9 +4,9 @@ import "../CSS/Task.css";
 export const Task = ({ data }) => {
   return (
     <div className="task">
-      <span>{data.title}</span>
+      <span className="title">{data.title}</span>
       <br />
-      <span>{data.description}</span>
+      <span className="description">{data.description}</span>
     </div>
   );
 };
