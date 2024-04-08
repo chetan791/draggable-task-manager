@@ -24,9 +24,10 @@ Below are the features of the TasKQ
 - Task Filtering: Sort tasks by date. Filter tasks to focus on specific categories or priorities.
 
 ## Installation & Getting started
+clone the repo and open it in vs code
 ```bash
-npm install draggable-task-manager-app
 cd draggable-task-manager-app
+npm install 
 npm start
 ```
 
