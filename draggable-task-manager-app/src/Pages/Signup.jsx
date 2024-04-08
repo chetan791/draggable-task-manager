@@ -22,7 +22,7 @@ export const Signup = () => {
       // console.log("clicked");
       dispatch(signup(signupdata));
       setTimeout(() => {
-        navigate("/login");
+        navigate("/");
       }, 2000);
     }
   };
@@ -80,7 +80,7 @@ export const Signup = () => {
           className="btn"
           type="submit"
         />
-        <Link to={"/login"}>
+        <Link to={"/"}>
           {" "}
           <h6 style={{ textAlign: "center" }}>Already have an account?</h6>
         </Link>

@@ -16,7 +16,7 @@ export const Navbar = () => {
     dispatch(logout());
     dispatch(emptyAllTasks());
     alert("logged out successfully");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -37,7 +37,7 @@ export const Navbar = () => {
         {isAuthenticated ? (
           <li onClick={handleLogout}>{`( ${name} ) Logout`}</li>
         ) : (
-          <Link to="/login">
+          <Link to="/">
             <li>Login</li>
           </Link>
         )}

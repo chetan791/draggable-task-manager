@@ -15,7 +15,7 @@ export const login = (details) => async (dispatch) => {
         alert("wrong credentials");
       } else {
         dispatch({ type: LOGINSUCCESS, payload: res.data });
-        console.log(res.data);
+        // console.log(res.data);
         alert("login successful");
       }
     }
@@ -32,7 +32,7 @@ export const signup = (details) => async (dispatch) => {
       "https://task-manager-app-backend.onrender.com/user/signup",
       details
     );
-    console.log(res.data);
+    // console.log(res.data);
     if (res.data.msg === "user already exists please login") {
       alert("user already exists please login");
     } else {

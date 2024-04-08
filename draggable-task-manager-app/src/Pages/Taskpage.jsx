@@ -15,6 +15,20 @@ export const Taskpage = () => {
   // console.log(data);
   let status = ["Task", "InProgress", "Done", "Rework"];
 
+  const [FilteredData, setFilteredData] = useState(null);
+  console.log(FilteredData);
+
+  const handelfilter = (e) => {
+    console.log(e.target.value);
+    if (!e.target.value == "") {
+      let filteredData = data.filter((item) => {
+        return item.date.substring(0, 10) === e.target.value;
+      });
+      setFilteredData(filteredData);
+      console.log(FilteredData);
+    }
+  };
+
   useEffect(() => {
     dispatch(getAllTasks(token));
   }, []);
@@ -22,16 +36,19 @@ export const Taskpage = () => {
   //adding download logic
   const downloadHandler = async () => {
     try {
-      const res = await fetch("http://localhost:8000/draggableTask/download/", {
-        method: "GET",
-        headers: {
-          Authorization: "Bearer " + token,
-          "Content-Type": "application/pdf",
-        },
-        responseType: "blob",
-      });
-
-      const pdfBlob = new Blob([res.data], { type: "application/pdf" });
+      const res = await fetch(
+        "https://task-manager-app-backend.onrender.com/draggableTask/download/",
+        {
+          method: "GET",
+          headers: {
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/pdf",
+          },
+          responseType: "blob",
+        }
+      );
+      const pdfBlob = await res.blob();
+      // console.log(pdfBlob);
       const url = URL.createObjectURL(pdfBlob);
       const link = document.createElement("a");
       link.href = url;
@@ -51,13 +68,19 @@ export const Taskpage = () => {
         <button className="buttons" onClick={() => setAddTask(true)}>
           Add Task
         </button>
+        <input type="date" onChange={handelfilter} />
         <button className="buttons" onClick={downloadHandler}>
           Download
         </button>
       </div>
       <div id="taskpage">
         {status.map((item, i) => (
-          <Statusbox key={i} status={item} data={data} token={token} />
+          <Statusbox
+            key={i}
+            status={item}
+            data={FilteredData ? FilteredData : data}
+            token={token}
+          />
         ))}
       </div>
       {addTask && <ModalForm setAddTask={setAddTask} token={token} />}

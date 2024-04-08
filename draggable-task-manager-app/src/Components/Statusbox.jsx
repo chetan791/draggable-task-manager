@@ -14,7 +14,7 @@ export const Statusbox = ({ status, data, token }) => {
     e.preventDefault();
     const droppedData = JSON.parse(e.dataTransfer.getData("application/json"));
     droppedData.status = status;
-    console.log({ status: droppedData.status });
+    // console.log({ status: droppedData.status });
     dispatch(editTask({ status: droppedData.status }, token, droppedData._id));
   };
 
@@ -32,6 +32,7 @@ export const Statusbox = ({ status, data, token }) => {
         {task.map((item, i) => (
           <Task key={item._id} data={item} i={i} />
         ))}
+        {task.length === 0 && <p>No task</p>}
       </div>
     </div>
   );
