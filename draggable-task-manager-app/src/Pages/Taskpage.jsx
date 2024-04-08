@@ -15,8 +15,8 @@ export const Taskpage = () => {
   // console.log(data);
   let status = ["Task", "InProgress", "Done", "Rework"];
 
-  const [FilteredData, setFilteredData] = useState(null);
-  console.log(FilteredData);
+  // const [FilteredData, setFilteredData] = useState(null);
+  // console.log(FilteredData);
 
   // const handelfilter = (e) => {
   //   console.log(e.target.value);
@@ -78,7 +78,7 @@ export const Taskpage = () => {
           <Statusbox
             key={i}
             status={item}
-            data={FilteredData ? FilteredData : data}
+            data={data}
             token={token}
           />
         ))}
