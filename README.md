@@ -39,7 +39,6 @@ Provide instructions and examples on how to use your project.
 5. you can download the data ino a pdf file by clicking on download button
 
 
-Include screenshots as necessary.
 Below are some screenShots of the website
 ![Screenshot 2024-04-08 104828](https://github.com/chetan791/draggable-task-manager/assets/118180630/2bcaf574-46a4-40ab-b1a2-999ebaf00978)
 
