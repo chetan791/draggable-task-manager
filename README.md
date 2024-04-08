@@ -25,19 +25,27 @@ Below are the features of the TasKQ
 
 ## Installation & Getting started
 ```bash
-npm install my-project
-cd my-project
+npm install draggable-task-manager-app
+cd draggable-task-manager-app
 npm start
 ```
 
 ## Usage
 Provide instructions and examples on how to use your project.
+1. you have to create an account
+2. then login with that account
+3. after login you will be redirected to the homepage
+4. on homepage can create new task by clicking on add task button and if you want to change the status of the task just drag it to another status box
+5. you can download the data ino a pdf file by clicking on download button
 
-```bash
-# Example
-```
 
 Include screenshots as necessary.
+Below are some screenShots of the website
+![Screenshot 2024-04-08 104828](https://github.com/chetan791/draggable-task-manager/assets/118180630/2bcaf574-46a4-40ab-b1a2-999ebaf00978)
+
+![Screenshot 2024-04-08 104847](https://github.com/chetan791/draggable-task-manager/assets/118180630/8e84e0f5-602e-402c-997d-f91cc9c284e3)
+
+![Screenshot 2024-04-08 104909](https://github.com/chetan791/draggable-task-manager/assets/118180630/734a53a0-6cef-4c60-afd4-1e174fe0dc81)
 
 ## Credentials
 user - chetan@gmail.com
@@ -64,11 +72,5 @@ Backend
 - Express.js
 - MongoDB
 
-Below are some screenShots of the website
-![Screenshot 2024-04-08 104828](https://github.com/chetan791/draggable-task-manager/assets/118180630/2bcaf574-46a4-40ab-b1a2-999ebaf00978)
-
-![Screenshot 2024-04-08 104847](https://github.com/chetan791/draggable-task-manager/assets/118180630/8e84e0f5-602e-402c-997d-f91cc9c284e3)
-
-![Screenshot 2024-04-08 104909](https://github.com/chetan791/draggable-task-manager/assets/118180630/734a53a0-6cef-4c60-afd4-1e174fe0dc81)
 
 
