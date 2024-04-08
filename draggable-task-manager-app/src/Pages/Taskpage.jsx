@@ -18,16 +18,16 @@ export const Taskpage = () => {
   const [FilteredData, setFilteredData] = useState(null);
   console.log(FilteredData);
 
-  const handelfilter = (e) => {
-    console.log(e.target.value);
-    if (!e.target.value == "") {
-      let filteredData = data.filter((item) => {
-        return item.date.substring(0, 10) === e.target.value;
-      });
-      setFilteredData(filteredData);
-      console.log(FilteredData);
-    }
-  };
+  // const handelfilter = (e) => {
+  //   console.log(e.target.value);
+  //   if (!e.target.value == "") {
+  //     let filteredData = data.filter((item) => {
+  //       return item.date.substring(0, 10) === e.target.value;
+  //     });
+  //     setFilteredData(filteredData);
+  //     console.log(FilteredData);
+  //   }
+  // };
 
   useEffect(() => {
     dispatch(getAllTasks(token));
@@ -68,7 +68,7 @@ export const Taskpage = () => {
         <button className="buttons" onClick={() => setAddTask(true)}>
           Add Task
         </button>
-        <input type="date" onChange={handelfilter} />
+        {/* <input type="date" onChange={handelfilter} /> */}
         <button className="buttons" onClick={downloadHandler}>
           Download
         </button>
