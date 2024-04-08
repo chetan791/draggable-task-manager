@@ -9,7 +9,7 @@ import {
   EMPTYTALLTASK,
 } from "../ActionTypes";
 
-const customAxios = axios.create({
+export const customAxios = axios.create({
   baseURL: "https://task-manager-app-backend.onrender.com/",
   headers: {
     "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export const getAllTasks = (details) => async (dispatch) => {
 
 export const addTask = (details, token) => async (dispatch) => {
   try {
-    const res = await customAxios.post("task/create", details, {
+    const res = await customAxios.post("draggabletask/create", details, {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -52,11 +52,15 @@ export const addTask = (details, token) => async (dispatch) => {
 export const editTask = (details, token, _id) => async (dispatch) => {
   console.log(details, token, _id, typeof details.status);
   try {
-    const res = await customAxios.patch(`task/update/${_id}`, details, {
-      headers: {
-        Authorization: "Bearer " + token,
-      },
-    });
+    const res = await customAxios.patch(
+      `draggabletask/update/${_id}`,
+      details,
+      {
+        headers: {
+          Authorization: "Bearer " + token,
+        },
+      }
+    );
     console.log(res.data);
     dispatch({ type: EDITTASK, payload: res.data.data });
     alert("task updated successfully");

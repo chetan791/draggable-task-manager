@@ -6,10 +6,8 @@
   row-gap: 30px;
 }
 
-#addTask {
+.buttons {
   display: block;
-  margin-left: auto;
-  margin-right: 40px;
   padding: 10px;
   color: white;
   border: none;
@@ -19,7 +17,7 @@
   background-color: #206bc4;
 }
 
-#addTask:hover {
+.buttons:hover {
   cursor: pointer;
   background-color: #4d9dff;
 }
@@ -38,4 +36,13 @@
   font-size: 50px;
   padding-top: 20%;
   opacity: 0.7;
+}
+
+#extraFeatures {
+  display: flex;
+  gap: 10px;
+  /* border: 1px solid white; */
+  width: 30%;
+  margin-left: auto;
+  justify-content: space-around;
 }
