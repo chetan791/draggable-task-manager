@@ -71,5 +71,3 @@ Backend
 - Express.js
 - MongoDB
 
-
-
