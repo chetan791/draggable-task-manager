@@ -1,4 +1,5 @@
-# Project Title
+
+![taskq-high-resolution-logo-white-transparent](https://github.com/chetan791/draggable-task-manager/assets/118180630/969931f5-5cd1-42c9-9f37-24ee8b1329a7)
 
 ## Introduction
 TaskQ - Your Personal Task Manager
