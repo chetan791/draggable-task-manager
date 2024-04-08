@@ -12,6 +12,14 @@ Fullstack
 Frontend: https://draggable-task-manager.vercel.app/
 Backend: https://task-manager-app-backend.onrender.com
 
+## Video Walkthrough of the project
+https://github.com/chetan791/draggable-task-manager/assets/118180630/634c5023-ecb7-4c77-b49f-88c12618bc5d
+
+## Video Walkthrough of the codebase
+https://github.com/chetan791/draggable-task-manager/assets/118180630/d3b044f8-2afb-42db-a4eb-9627854f637d
+
+
+
 ## Features
 Below are the features of the TasKQ
 
@@ -49,15 +57,22 @@ Below are some screenShots of the website
 
 ## Credentials
 user - chetan@gmail.com
+
 password - sanket123
 
 ## API Endpoints
 In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
+
 POST  /user/login - login
+
 POST /user/signup - signup
+
 GET  /draggabletask - retrieve all tasks
+
 POST /draggabletask/create - create a new task
+
 PATCH  /draggabletask/update/:id - update the status of the task
+
 DELETE draggabletask/delete/:id - delete the task
 
 ## Technology Stack
@@ -67,6 +82,7 @@ Frontend
 - Javascript
 - React
 - Redux
+
 Backend
 - Node.js
 - Express.js
